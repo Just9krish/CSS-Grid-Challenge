@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid fundamental</title>
+    <style>
+      body {
+        background-image: linear-gradient(
+          to right top,
+          #d16ba5,
+          #c777b9,
+          #ba83ca,
+          #aa8fd8,
+          #9a9ae1,
+          #8aa7ec,
+          #79b3f4,
+          #69bff8,
+          #52cff3,
+          #41dfff,
+          #46eefa,
+          #5ffbf1
+        );
+        background-repeat: no-repeat;
+      }
+
+      .container{
+          margin: 0 auto;
+          padding: 30px 0;
+
+          display: grid;
+          grid-template-columns: 200px 500px;
+          grid-template-rows: 200px 100px 400px;
+          gap: 20px;
+      }
+
+      .item {
+          background-color: #f9f871;
+          color: #000;
+          text-align: center;
+          font-weight: 700;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          border: 2px solid #ffc75f;
+          font-size: 2rem;
+          max-width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+    </div>
+  </body>
+</html>
